@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border:none;
+    color: inherit;
+}
+.card {
+    border: 1px solid red;
+    width: 600px; 
+    background-color: #000;
+    color: #fff;
+    padding: 16px;
+    border-radius: 10px;
+    margin: 100px auto 0;
+}
+.name {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: #808080;
+}
+
+.title {
+    margin: 16px 0; 
+    text-transform: capitalize; 
+}
+
+.description {
+    max-width: 60ch;
+    color: #808080;
+}
+
+.btn {
+    background-color: #fff;
+    color: #000;
+    padding: 8px 16px; 
+    border-radius: 10px;
+    font-weight: 700;
+    margin-top: 16px; 
+}
+
+strong {
+    color: white; 
+}
