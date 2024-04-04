@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans", "Helvetica Neue";
+}
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.header {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+.title {
+    border: 1px solid #000;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    flex: 1;
+}
+
+.menu {
+    border: 1px solid #000;
+    display: flex;
+    gap: 1rem;
+    flex: 1;
+    justify-content: center;
+
+} 
+
+.link {
+    text-decoration: none;
+    color: #000;
+}
+
+.btn-container {
+    border: 1px solid #000;
+    display: flex;
+    gap: 1rem;
+    flex: 1;
+    justify-content: end;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
