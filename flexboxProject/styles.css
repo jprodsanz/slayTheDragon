@@ -157,6 +157,26 @@ button {
 .features__box__description {
     margin-top: 1rem;
 }
+/* contact */
+.contact {
+    margin-top: 10rem;
+    text-align: center;
+}
+.contact__description {
+    font-size: 1.2rem;
+    max-width: 60ch;
+    margin: 1rem auto;
+}
+/* footer */
+.footer {
+    margin-top: 10rem;
+    text-align: center;
+}
+.footer__title {
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+}
 /* utility class */
 .btn {
     text-decoration: none;
