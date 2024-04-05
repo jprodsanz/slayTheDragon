@@ -10,17 +10,71 @@
     <title>Flexbox Project</title>
 </head>
 <body>
-    <header class="header">
-        <h1 class="title">Slaying the Dragon</h1>
-        <nav class="menu">
-                <a class="link" href="pricing">Pricing</a>
-                <a class="link" href="Features">Features</a>
-                <a class="link" href="Contact">Contact</a>
+    <header class="header container">
+        <h2 class="header__title">Slaying the Dragon</h2>
+        <nav class="header__menu">
+                <a class="header__link" href="Pricing">Pricing</a>
+                <a class="header__link" href="Features">Features</a>
+                <a class="header__link" href="Contact">Contact</a>
         </nav>
-        <div class="btn-container">
+        <div class="header__btn-container">
             <button class="btn">Login</button>
             <button class="btn">Enter App</button>
         </div>
     </header>
+    <section class="hero container">
+        <h1 class="hero__title">Accounting Made Simple For Small Businesses </h1>
+        <p class="hero__description">Most bookkeeping software is accurate but hard to use, we
+            make the opposite tradeoff and hope you don't get audited. 
+        </p>
+        <a href="#" class="btn">Learn More</a>
+    </section>
+    <section class="pricing container">
+        <h2 class="pricing__title">Simple Transparent Pricing</h2>
+        <p class="pricing__description">It does not matter what size your business, is our software works well for you.</p>
+        <div class="pricing__container">
+            <div class="pricing__box">
+                <h3 class="pricing__price">$9.00</h3>
+                <h4 class="pricing__plan">Starter</h4>
+                <p class="pricing__plan-description">Good for anyone who's self-employed</p>
+                <button class="pricing__btn">Get Started</button>
+                <ul class="pricing__features">
+                    <li>Send ten quotes & invoices</li>
+                    <li>Connect up to two bank accounts</li>
+                    <li>Track up to 15 expenses per month</li>
+                    <li>Manual payroll support</li>
+                    <li>Export up to three reports </li>
+                </ul>
+            </div>
+            <div class="pricing__box">
+                <h3 class="pricing__price">$15.00</h3>
+                <h4 class="pricing__plan">Business</h4>
+                <p class="pricing__plan-description">Perfect for small / medium size businesses</p>
+                <button class="pricing__btn">Get Started</button>
+                <ul class="pricing__features">
+                    <li>Send 25 quotes and invoices</li>
+                    <li>Connect up to five bank accounts</li>
+                    <li>Track up to 50 expenses per month</li>
+                    <li>Automated payroll support</li>
+                    <li>Export up to 12 reports</li>
+                    <li>Bulk Reconcile Transactions</li>
+                    <li>Track in multiple currencies </li>
+                </ul>
+            </div>
+            <div class="pricing__box">
+                <h3 class="pricing__price">$39.00</h3>
+                <h4 class="pricing__plan">Enterprise</h4>
+                <p class="pricing__plan-description">For the biggest enterprise companies</p>
+                <button class="pricing__btn">Get Started</button>
+                <ul class="pricing__features">
+                    <li>Send unlimited quotes and invoices</li>
+                    <li>Connect up to 15 bank accounts</li>
+                    <li>Track up to 200 expenses per month</li>
+                    <li>Automated payroll support</li>
+                    <li>Export up to 25 reports including TPS</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
