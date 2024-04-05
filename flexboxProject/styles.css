@@ -77,11 +77,11 @@ button {
 .pricing {
     margin-top: 10rem;
 }
-.pricing__title {
+/* .pricing__title {
     font-size: 2.25rem;
     letter-spacing: -0.05em;
     line-height: 1;
-}
+} */
 .pricing__description {
     font-size: 1.2rem;
     max-width: 45ch;
@@ -123,6 +123,40 @@ button {
     gap: 1rem;
     font-size: 0.9rem;
 }
+/* features */
+.features {
+    margin-top: 10rem;
+    text-align: center; 
+}
+/* .features__title {
+    font-size: 2.25rem;
+    letter-spacing:-0.05rem;
+    line-height: 1;
+} */
+.features__description {
+    font-size: 1.2rem;
+    max-width: 45ch;
+    margin: 1rem auto;
+}
+.features__container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.features__box {
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 500px;
+}
+.features__box__title {
+    line-height: 1;
+}
+
+.features__box__description {
+    margin-top: 1rem;
+}
 /* utility class */
 .btn {
     text-decoration: none;
@@ -135,4 +169,9 @@ button {
 .container {
     width: 90%;
     margin-inline: auto;
+}
+.title {
+    font-size: 2.25rem;
+    letter-spacing:-0.05rem;
+    line-height: 1;
 }
