@@ -53,6 +53,9 @@ button {
     flex: 1;
     justify-content: end;
 }
+.header__bars {
+    display:none;
+}
 
 /* hero section */
 .hero {
@@ -176,6 +179,38 @@ button {
     font-size: 1rem;
     font-weight: 200;
     letter-spacing: 0.1em;
+}
+@media (max-width: 891px) {
+    .header__title {
+        font-size: 1.2rem;
+}
+    .header__link {
+        font-size: 0.8rem;
+    }
+    .header__btn {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 713px) {
+    .header {
+        justify-content: space-between;
+    }
+
+    .header__menu {
+        display: none;
+    }
+    .header__btn-container {
+        display: none;
+    }
+    .header__bars {
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .header_title {
+        flex: 0 1 auto;
+    }
 }
 /* utility class */
 .btn {
