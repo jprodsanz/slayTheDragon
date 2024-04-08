@@ -80,11 +80,6 @@ button {
 .pricing {
     margin-top: 10rem;
 }
-/* .pricing__title {
-    font-size: 2.25rem;
-    letter-spacing: -0.05em;
-    line-height: 1;
-} */
 .pricing__description {
     font-size: 1.2rem;
     max-width: 45ch;
@@ -92,6 +87,7 @@ button {
 }
 .pricing__container {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 .pricing__box {
@@ -100,6 +96,7 @@ button {
     padding: 2rem;
     border-radius: 20px;
     flex: 1;
+    min-width: 400px;
 }
 .pricing__price {
     font-size: 2rem;
@@ -126,16 +123,12 @@ button {
     gap: 1rem;
     font-size: 0.9rem;
 }
+
 /* features */
 .features {
     margin-top: 10rem;
     text-align: center; 
 }
-/* .features__title {
-    font-size: 2.25rem;
-    letter-spacing:-0.05rem;
-    line-height: 1;
-} */
 .features__description {
     font-size: 1.2rem;
     max-width: 45ch;
@@ -159,7 +152,7 @@ button {
 
 .features__box__description {
     margin-top: 1rem;
-}
+} 
 /* contact */
 .contact {
     margin-top: 10rem;
@@ -180,6 +173,26 @@ button {
     font-weight: 200;
     letter-spacing: 0.1em;
 }
+
+/* utility class */
+.btn {
+    text-decoration: none;
+    display:inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+.container {
+    width: 90%;
+    margin-inline: auto;
+}
+.title {
+    font-size: 2.25rem;
+    letter-spacing:-0.05rem;
+    line-height: 1;
+}
+/* media queries  */
 @media (max-width: 891px) {
     .header__title {
         font-size: 1.2rem;
@@ -190,6 +203,30 @@ button {
     .header__btn {
         font-size: 0.8rem;
     }
+    .hero__title {
+        /* hero section */
+        font-size: 3rem;
+    }
+    .hero__description {
+        font-size: 1rem;
+        margin:1.5rem auto;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .pricing__description {
+        font-size: 1rem;
+}
+    .pricing__price {
+        font-size: 1.5rem;
+    }
+    .features__title {
+        font-size: 2rem;
+    }
+    .features__description {
+        font-size: 1rem;
+    }
+    
 }
 
 @media (max-width: 713px) {
@@ -211,22 +248,82 @@ button {
     .header_title {
         flex: 0 1 auto;
     }
+
+    /* here section */
+    .hero__title{
+        font-size: 2.5rem;
+    }
+    .hero__description {
+        font-size: 0.9rem;
+        margin: 1rem auto;
+    }
+    .hero__btn {
+        font-size: 0.9rem;
+    }
+    .hero {
+        margin-top: 5rem;
+    }
+    .pricing {
+        margin-top: 5rem;
 }
-/* utility class */
-.btn {
-    text-decoration: none;
-    display:inline-block;
-    background-color: #000;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
+    .title {
+        font-size: 1.5rem;
+    }
+    .pricing__description {
+        font-size: 0.5rem 0;
+    }
+    .pricing_plan-description {
+        font-size: 0.9rem;
+    }
+    .features {
+        margin-top: 5rem;
+    }
+    .features__title {
+        font-size: 1.5rem;
+
+    }
+    .features__description {
+        font-size: 0.9rem;
+        margin: 0.5rem auto; 
 }
-.container {
-    width: 90%;
-    margin-inline: auto;
+    .features__box-title {
+        font-size: 1rem;
 }
-.title {
-    font-size: 2.25rem;
-    letter-spacing:-0.05rem;
-    line-height: 1;
+    .features__box-description {
+        font-size: 0.9rem;
+        margin-top: 0.5 rem;
+    }
+}
+
+@media (max-width: 495px) {
+    .hero__title {
+        font-size: 2rem;
+    }
+    .title {
+        font-size: 1.3rem;
+    }
+    .pricing__box {
+        min-width: 290px;
+    }
+    .features__title {
+        font-size: 1.3rem;
+    }
+    .contact__title {
+    font-size: 1.3rem;
+}
+}
+
+@media (max-width:396px) {
+    .hero__title {
+        font-size: 1.6rem;
+}
+    .title {
+        font-size: 1.1rem;
+    }
+    .features__title {
+        font-size: 1.1rem;
+    }
+    .contact__title {
+        font-size: 1.1rem;
+    }
 }
