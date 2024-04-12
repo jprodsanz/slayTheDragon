@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", "Helvetica Neue";
+}
+@keyframes  slideInLeft {
+    from {
+        transform: translate(-300px);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+.title {
+    /* animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+    animation-fill-mode: both; */
+    animation: slideInLeft 1s ease-in;
+}
+
