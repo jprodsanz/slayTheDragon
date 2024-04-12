@@ -9,6 +9,8 @@
     margin: 0;
     line-height: 1.5;
 }
+
+/* don't do this */
 html {
     font-size: 16px;
 }
