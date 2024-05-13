@@ -19,39 +19,83 @@
 .pricing__box--0margin {
     margin: 0
 }
+.pricing__box__title {
+    font-size: 1.125rem;  
+}
+
+.pricing__box__description1 {
+    margin-bottom: 2.5rem;
+    font-size: 0.75rem;
+    font-family: 'Source Code Pro', monospace;
+}
+.pricing__box__description2 {
+    font-size: 0.75rem;
+    color: #888;
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 1rem;
+}
+.pricing__btn {
+    font-size: 0.7rem;
+}
+
 /* xs */
 @media (mind-width: 475px) {
-    .container {
-        max-width: 475px;
+    .pricing__title {
+        font-size: 0.875rem;
+    }
+    .pricing__box__title {
+        font-size: 1.25rem;  
+    }
+    .pricing__box__description1, 
+    .pricing__box__description2 {
+        font-size: 0.875rem;
+    }
+    .pricing__btn {
+        font-size: 0.875rem;
     }
 }
-/* sm */
+/* sm
 @media (min-width: 640px) {
-    .container {
-        max-width: 640px;
-    }
+
 }
-/* md */
+md
 @media (min-width: 768px) {
-    .container {
-        max-width: 768px;
-}
-}
+
+} */
 /* lg */
 @media (min-width: 1024px) {
-    .container {
-        max-width: 1024px; 
+    .pricing__grid-container {
+        display:grid;
+        grid-template-areas: 
+        'css css css jav'
+        'rea rea nex nex';
+        gap: 1rem;
+    }
+    .pricing__box {
+        margin: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+    }
+    .pricing__box--css {
+        grid-area: css;
+    }
+    .pricing__box--js {
+        grid-area: jav; 
+    }
+    .pricing__box--react {
+        grid-area: rea;
+    }
+    .pricing__box--next {
+        grid-area: nex;
     }
 }
 /* xl */
 @media (min-width: 1280px) {
-    .container {
-        max-width: 1280px;
-    }
+
 }
 /* 2xl */
 @media (min-width: 1536px) {
-    .container {
-        max-width: 1536px;
-    }
+
 }
